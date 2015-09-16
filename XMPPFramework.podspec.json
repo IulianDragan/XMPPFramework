@@ -12,7 +12,7 @@
   "summary": "Fork for https://github.com/robbiehanson/XMPPFramework An XMPP Framework in Objective-C for the Mac / iOS development community.",
   "homepage": "https://github.com/andrey-justo-movile/XMPPFramework",
   "authors": {
-    "Andrey Victor Justo": "andrey.justo@gmail.com"
+    "Andrey Victor Justo": "andrey.justo@gmail.com",
     "Robbie Hanson": "robbiehanson@deusty.com"
   },
   "source": {
