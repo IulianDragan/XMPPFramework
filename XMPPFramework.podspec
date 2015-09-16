@@ -71,8 +71,8 @@ s.subspec 'KissXML' do |ss|
 ss.source_files = ['Vendor/KissXML/**/*.{h,m}', 'module/module.modulemap']
 ss.libraries = 'xml2','resolv'
 ss.xcconfig = {
-'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(PODS_ROOT)/uXMPPFramework/module',
-'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/uXMPPFramework/Vendor/libidn',
+'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(PODS_ROOT)/XMPPFramework/module',
+'LIBRARY_SEARCH_PATHS' => '$(PODS_ROOT)/XMPPFramework/Vendor/libidn',
 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
 'OTHER_LDFLAGS' => '"$(inherited)" "-lxml2" "-objc"',
 'ENABLE_BITCODE' => 'NO'
