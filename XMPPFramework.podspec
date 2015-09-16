@@ -40,6 +40,12 @@ grep '#define _XMPP_' -r /Extensions \
 >> XMPPFramework.h
 END
 
+s.xcconfig = {
+ 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(PODS_ROOT)/XMPPFramework/module',
+ 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+ 'OTHER_LDFLAGS' => '"$(inherited)" "-lxml2" "-objc"'
+}
+
 s.preserve_path = 'module/module.modulemap'
 s.module_map = 'module/module.modulemap'
 
