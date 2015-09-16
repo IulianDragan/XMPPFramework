@@ -39,7 +39,7 @@ grep '#define _XMPP_' -r /Extensions \
 | perl -pe 's/Extensions\/([A-z0-9_]*)\/([A-z]*.h).*/\n#ifdef HAVE_XMPP_SUBSPEC_\U\1\n\E#import "\2"\n#endif/' \
 >> XMPPFramework.h
 END
-
+
 s.preserve_path = 'module/module.modulemap'
 #s.module_map = 'module/module.modulemap'
 
@@ -70,7 +70,7 @@ end
 s.subspec 'KissXML' do |ss|
 ss.source_files = ['Vendor/KissXML/**/*.{h,m}', 'module/module.modulemap']
 ss.libraries = 'xml2','resolv'
-s.xcconfig = {
+ss.xcconfig = {
  'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(PODS_ROOT)/XMPPFramework/module',
   'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
   'OTHER_LDFLAGS' => '"$(inherited)" "-lxml2" "-objc"'
