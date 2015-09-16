@@ -17,7 +17,7 @@
   },
   "source": {
     "git": "https://github.com/andrey-justo-movile/XMPPFramework.git",
-    "tag": "3.7.0"
+    "tag": "3.7.1"
   },
   "resources": [
     "**/*.{xcdatamodel,xcdatamodeld}"
