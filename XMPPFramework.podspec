@@ -58,6 +58,7 @@ end
 s.subspec 'KissXML' do |ss|
 ss.source_files = ['Vendor/KissXML/**/*.{h,m}', 'module/module.modulemap']
 ss.libraries = 'xml2','resolv'
+ss.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => $(PODS_ROOT)/XMPPFramework/module }
 ss.xcconfig = {
 'HEADER_SEARCH_PATHS' => '$(inherited) $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/XMPPFramework/module $(SDKROOT)/usr/include/libresolv'
 }
