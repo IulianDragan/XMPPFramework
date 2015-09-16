@@ -25,6 +25,12 @@ Additionally the framework is massively parallel and thread-safe. Structured usi
 this framework performs    well regardless of whether it\'s being run on an old iPhone, or
 on a 12-core Mac Pro. (And it won\'t block the main thread... at all).'
 
+s.xcconfig = {
+  'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(PODS_ROOT)/XMPPFramework/module',
+  'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
+  'OTHER_LDFLAGS' => '"$(inherited)" "-lxml2" "-objc"'
+}
+
 s.requires_arc = true
 
 # XMPPFramework.h is used internally in the framework to let modules know
