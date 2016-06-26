@@ -95,7 +95,7 @@
       },
       "dependencies": {
         "CocoaLumberjack": [
-          "~>1.9"
+          "~>2.3.0"
         ],
         "CocoaAsyncSocket": [
           "~>7.4"
